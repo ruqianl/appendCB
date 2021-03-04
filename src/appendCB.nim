@@ -32,7 +32,7 @@ when(isMainModule):
     b:Bam
     out_bam:Bam
     ap:string
-    generate:bool = args["--use-median"]
+    generate:bool = args["--generate"]
 
   if($args["--append"]) == "nil":
     quit "append is required"
