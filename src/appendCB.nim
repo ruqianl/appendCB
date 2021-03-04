@@ -50,6 +50,7 @@ when(isMainModule):
     if cbt.isNone:
       if generate:
         record.set_tag("CB",ap)
+        out_bam.write(record)
       continue
     var cb = cbt.get
     cb = cb & ap
